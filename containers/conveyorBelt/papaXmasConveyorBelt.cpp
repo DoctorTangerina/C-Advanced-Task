@@ -30,11 +30,10 @@ IConveyorBelt &PapaXmasConveyorBelt::operator<<(const IElf &)
     return *this;
 }
 
-void PapaXmasConveyorBelt::receiveObject(Object *&obj) {
+void PapaXmasConveyorBelt::receiveObject(Object *obj) {
     if (holding)
         return;
     holding = obj;
-    obj = nullptr;
 }
 
 Object *PapaXmasConveyorBelt::giveObject(int) {

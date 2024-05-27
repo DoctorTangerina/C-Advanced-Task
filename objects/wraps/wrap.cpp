@@ -14,12 +14,11 @@ Wrap::~Wrap()
     delete this->holding;
 }
 
-bool Wrap::wrapMeThat(Object *&item)
+bool Wrap::wrapMeThat(Object *item)
 {
     if (holding)
         return false;
     holding = item;
-    item = nullptr;
     return true;
 }
 

@@ -16,7 +16,7 @@ public:
 
     IConveyorBelt &operator>>(IElf &) override;
     IConveyorBelt &operator<<(const IElf &) override;
-    void receiveObject(Object *&) override;
+    void receiveObject(Object *) override;
     Object *giveObject(int) override;
 private:
     Object *holding;

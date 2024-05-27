@@ -61,7 +61,6 @@ void PapaXmasElf::takeObject(Object *obj)
     if (holding)
         return;
     holding = obj;
-    obj = nullptr;
 }
 
 void PapaXmasElf::wrapObject(Object *obj) const

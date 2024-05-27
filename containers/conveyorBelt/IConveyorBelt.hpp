@@ -7,12 +7,11 @@
 
 #pragma once
 
-#include "ITable.hpp"
+#include "IContainer.hpp"
 
 class IElf;
-class Object;
 
-class IConveyorBelt : public ITable {
+class IConveyorBelt : public IContainer {
 public:
     virtual IConveyorBelt &operator>>(IElf &) = 0;
     virtual IConveyorBelt &operator<<(const IElf &) = 0;

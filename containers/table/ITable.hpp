@@ -7,14 +7,14 @@
 
 #pragma once
 
+#include "IContainer.hpp"
 #include <string>
 
 class Object;
 
-class ITable {
+class ITable : public IContainer {
 public:
-    virtual void receiveObject(Object *) = 0;
-    virtual Object *giveObject(int) = 0;
+    virtual const std::string **showContent() = 0;
 };
 
 ITable *createTable();

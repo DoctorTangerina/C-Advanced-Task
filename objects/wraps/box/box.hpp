@@ -14,7 +14,7 @@ public:
     Box();
     ~Box() = default;
 
-    bool wrapMeThat(Object *&item) override;
+    bool wrapMeThat(Object *item) override;
     Object *openMe() override;
     void closeMe() override;
 private:

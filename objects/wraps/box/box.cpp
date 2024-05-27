@@ -9,7 +9,7 @@
 
 Box::Box() : Wrap("a box") { this->isOpened = true; }
 
-bool Box::wrapMeThat(Object *&item)
+bool Box::wrapMeThat(Object *item)
 {
     if (!this->isOpened)
         return false;

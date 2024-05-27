@@ -13,7 +13,7 @@ public:
     ~PapaXmasTable() = default;
     void receiveObject(Object *) override;
     Object *giveObject(int) override;
-    const std::string **showContent();
+    const std::string **showContent() override;
 private:
     Object *tableTop[10];
 };
